@@ -1,0 +1,360 @@
+{
+  "sectionTitle": "Education Journey",
+  "sectionDescription": "Explore my academic background, certifications, and continuous learning path.",
+  "formalEducation": [
+    {
+      "id": 1,
+      "title": "MS in Computer Science",
+      "institution": "University of Texas at Arlington",
+      "location": "Arlington, TX",
+      "year": "Aug 2023 - May 2025",
+      "description": "Master of Science in Computer Science with focus on Intelligent Systems and Software Engineering.",
+      "barColor": "bg-[#d53f8c]",
+      "iconBgColor": "bg-[#d53f8c]",
+      "showStar": true,
+      "achievements": [
+        "Major: Intelligent Systems",
+        "Major: Software Engineering",
+        "Member of UTA Journaling Club"
+      ],
+      "courses": [
+        "Data Analysis and Modeling Techniques",
+        "Distributed Systems",
+        "Data Mining",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Software Engineering",
+        "Web Data Management",
+        "Advanced Topics in Software Engineering",
+        "Database Systems",
+        "Bio-Informatics"
+      ],
+      "projects": [
+        "UTAMarket – AI-powered E-Commerce Platform",
+        "MavSphere - Academic Networking Platform",
+        "MavLynx - AI-Powered Mobile Student Support App",
+        "PoseMaster – Real-Time Yoga Pose Detection System",
+        "FormIQ – Real-Time Exercise Pose Detection",
+        "MediClerk – Healthcare Assistant & Wellness Tracker",
+        "DistribuSync - Distributed File System",
+        "Bank Transaction System - Two-Phase Commit Implementation",
+        "MavBudgetz - Personal Finance Tracker",
+        "SWIM Protocol Implementation"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BTech in Electronics and Communication Engineering",
+      "institution": "Jawaharlal Nehru Technological University",
+      "location": "Hyderabad, India",
+      "year": "Jun 2019 - May 2023",
+      "description": "Bachelor of Technology in Electronics and Communication Engineering with focus on electronic systems, communication technologies, and digital signal processing.",
+      "barColor": "bg-[#4361ee]",
+      "iconBgColor": "bg-[#4361ee]",
+      "achievements": [
+        "First Class with Distinction",
+        "Technical Lead - College IEEE Student Branch",
+        "Best Project Award - Final Year Project"
+      ],
+      "courses": [
+        "Digital Electronics",
+        "Communication Systems",
+        "Signal Processing",
+        "Microprocessors",
+        "Electronic Circuits"
+      ],
+      "projects": [
+        "Smart Plant Nursery - IoT-based Plant Monitoring System",
+        "Dual Axis Solar Tracker - Automated Solar Panel Optimization",
+        "Smart Home Automation System - Microcontroller-based Home Control"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "PHP & Laravel Certification",
+      "issuer": "PHP Developers Association",
+      "date": "December 2022",
+      "duration": "120 hours",
+      "category": "web",
+      "description": "Comprehensive certification covering advanced PHP concepts, Laravel framework, and modern web application development practices.",
+      "skills": ["PHP", "Laravel", "MVC", "RESTful APIs"],
+      "topics": [
+        "Eloquent ORM",
+        "Blade Templating",
+        "Middleware",
+        "Authentication",
+        "Testing"
+      ],
+      "image": "/placeholder.svg?height=300&width=500",
+      "url": "https://example.com/certificate"
+    },
+    {
+      "id": 2,
+      "name": "Full Stack Web Development",
+      "issuer": "Web Development Institute",
+      "date": "August 2022",
+      "duration": "200 hours",
+      "category": "web",
+      "description": "Intensive certification program covering both frontend and backend technologies for building modern, responsive web applications.",
+      "skills": ["JavaScript", "HTML/CSS", "Node.js", "React"],
+      "topics": [
+        "Responsive Design",
+        "State Management",
+        "API Integration",
+        "Database Design"
+      ],
+      "image": "/placeholder.svg?height=300&width=500",
+      "url": "https://example.com/certificate"
+    },
+    {
+      "id": 3,
+      "name": "Database Administration",
+      "issuer": "Database Technologies Association",
+      "date": "March 2022",
+      "duration": "80 hours",
+      "category": "database",
+      "description": "Specialized certification in database design, optimization, and administration with focus on relational database systems.",
+      "skills": ["MySQL", "Database Design", "SQL", "Performance Tuning"],
+      "topics": [
+        "Normalization",
+        "Indexing",
+        "Query Optimization",
+        "Backup & Recovery"
+      ],
+      "image": "/placeholder.svg?height=300&width=500",
+      "url": "https://example.com/certificate"
+    },
+    {
+      "id": 4,
+      "name": "Advanced JavaScript",
+      "issuer": "JavaScript Foundation",
+      "date": "November 2021",
+      "duration": "60 hours",
+      "category": "programming",
+      "description": "In-depth certification covering advanced JavaScript concepts, modern ES6+ features, and best practices for web development.",
+      "skills": ["JavaScript", "ES6+", "Async Programming", "Design Patterns"],
+      "topics": [
+        "Promises",
+        "Async/Await",
+        "Functional Programming",
+        "Performance Optimization"
+      ],
+      "image": "/placeholder.svg?height=300&width=500",
+      "url": "https://example.com/certificate"
+    },
+    {
+      "id": 5,
+      "name": "DevOps Essentials",
+      "issuer": "Cloud Technologies Institute",
+      "date": "July 2021",
+      "duration": "100 hours",
+      "category": "devops",
+      "description": "Comprehensive certification covering essential DevOps practices, tools, and methodologies for modern software development.",
+      "skills": ["Docker", "CI/CD", "Git", "AWS"],
+      "topics": [
+        "Containerization",
+        "Pipeline Automation",
+        "Infrastructure as Code",
+        "Monitoring"
+      ],
+      "image": "/placeholder.svg?height=300&width=500",
+      "url": "https://example.com/certificate"
+    }
+  ],
+  "courseCategories": [
+    {
+      "id": "foundations",
+      "name": "Core Foundations"
+    },
+    {
+      "id": "algorithms",
+      "name": "Algorithms & Theory"
+    },
+    {
+      "id": "ai_ml",
+      "name": "AI & Machine Learning"
+    },
+    {
+      "id": "systems",
+      "name": "Systems & Engineering"
+    },
+    {
+      "id": "data",
+      "name": "Data Management"
+    }
+  ],
+  "onlineCourses": [
+    {
+      "id": 1,
+      "name": "Foundations of Graduate Studies",
+      "platform": "University",
+      "category": "foundations",
+      "duration": "Semester 1",
+      "completionDate": "2023",
+      "skills": ["Research Methods", "Academic Writing", "Graduate Studies"],
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "name": "Design and Analysis of Algorithms",
+      "platform": "University",
+      "category": "algorithms",
+      "duration": "Semester 1",
+      "completionDate": "2023",
+      "skills": ["Algorithm Design", "Complexity Analysis", "Problem Solving"],
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "name": "Data Analysis and Modeling Techniques",
+      "platform": "University",
+      "category": "data",
+      "duration": "Semester 1",
+      "completionDate": "2023",
+      "skills": ["Data Analysis", "Statistical Modeling", "Data Visualization"],
+      "url": "#"
+    },
+    {
+      "id": 4,
+      "name": "Distributed Systems",
+      "platform": "University",
+      "category": "systems",
+      "duration": "Semester 2",
+      "completionDate": "2024",
+      "skills": ["Distributed Computing", "System Architecture", "Scalability"],
+      "url": "#"
+    },
+    {
+      "id": 5,
+      "name": "Data Mining",
+      "platform": "University",
+      "category": "data",
+      "duration": "Semester 2",
+      "completionDate": "2024",
+      "skills": [
+        "Data Mining Algorithms",
+        "Pattern Recognition",
+        "Predictive Analytics"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 6,
+      "name": "Machine Learning",
+      "platform": "University",
+      "category": "ai_ml",
+      "duration": "Semester 2",
+      "completionDate": "2024",
+      "skills": ["Supervised Learning", "Neural Networks", "Model Evaluation"],
+      "url": "#"
+    },
+    {
+      "id": 7,
+      "name": "Artificial Intelligence",
+      "platform": "University",
+      "category": "ai_ml",
+      "duration": "Semester 3",
+      "completionDate": "2024",
+      "skills": [
+        "AI Algorithms",
+        "Knowledge Representation",
+        "Intelligent Systems"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 8,
+      "name": "Software Engineering",
+      "platform": "University",
+      "category": "systems",
+      "duration": "Semester 3",
+      "completionDate": "2024",
+      "skills": [
+        "Software Design",
+        "Project Management",
+        "Development Lifecycle"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 9,
+      "name": "Web Data Management",
+      "platform": "University",
+      "category": "data",
+      "duration": "Semester 4",
+      "completionDate": "2024",
+      "skills": [
+        "Web Technologies",
+        "Data Integration",
+        "Information Retrieval"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 10,
+      "name": "Advanced Topics in Software Engineering",
+      "platform": "University",
+      "category": "systems",
+      "duration": "Semester 4",
+      "completionDate": "2024",
+      "skills": [
+        "Advanced Design Patterns",
+        "Architecture",
+        "Modern Practices"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 11,
+      "name": "Database Systems",
+      "platform": "University",
+      "category": "data",
+      "duration": "Semester 4",
+      "completionDate": "2024",
+      "skills": [
+        "Database Design",
+        "Query Optimization",
+        "Transaction Management"
+      ],
+      "url": "#"
+    },
+    {
+      "id": 12,
+      "name": "Bio Informatics",
+      "platform": "University",
+      "category": "algorithms",
+      "duration": "Semester 5",
+      "completionDate": "2025",
+      "skills": [
+        "Biological Data Analysis",
+        "Sequence Alignment",
+        "Genomic Algorithms"
+      ],
+      "url": "#"
+    }
+  ],
+  "stats": [
+    {
+      "value": "6+",
+      "label": "Years of Education",
+      "color": "from-primary/20 to-primary/5"
+    },
+    {
+      "value": "5+",
+      "label": "Certifications",
+      "color": "from-secondary/20 to-secondary/5"
+    },
+    {
+      "value": "10+",
+      "label": "Courses",
+      "color": "from-green-500/20 to-green-500/5"
+    },
+    {
+      "value": "100+",
+      "label": "Hours of Learning",
+      "color": "from-blue-500/20 to-blue-500/5"
+    }
+  ]
+}

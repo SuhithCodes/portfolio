@@ -1,0 +1,330 @@
+{
+  "sectionInfo": {
+    "title": "Featured Projects",
+    "description": "A showcase of my most significant projects, demonstrating my skills and expertise in web development."
+  },
+  "projects": [
+    {
+      "title": "UTAMarket – E-Commerce Platform",
+      "description": "AI powered E-Commerce Platform with personalized recommendations and dynamic pricing",
+      "images": [
+        "/images/projects/UTAMarket/1.png",
+        "/images/projects/UTAMarket/2.png",
+        "/images/projects/UTAMarket/3.png",
+        "/images/projects/UTAMarket/4.png",
+        "/images/projects/UTAMarket/5.png",
+        "/images/projects/UTAMarket/6.png",
+        "/images/projects/UTAMarket/7.png"
+      ],
+      "technologies": [
+        "Next.js",
+        "React 18",
+        "Node.js",
+        "MySQL",
+        "NextAuth",
+        "NLP",
+        "TensorFlow.js",
+        "LLMs",
+        "Grok AI"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/UTAMarket",
+      "liveUrl": "",
+      "keyFeatures": [
+        "AI-powered personalized product recommendations for 50+ products",
+        "Real-time dynamic pricing algorithms based on user behavior",
+        "Intelligent search with Natural Language Processing",
+        "Secure payment processing and user authentication",
+        "Role-based access control system"
+      ],
+      "categories": ["Full Stack", "ML/AI"]
+    },
+    {
+      "title": "MavSphere - Academic Networking Platform",
+      "description": "Academic networking and career development platform for graduate students",
+      "images": [
+        "/images/projects/MavSphere/1.png",
+        "/images/projects/MavSphere/2.png",
+        "/images/projects/MavSphere/3.png",
+        "/images/projects/MavSphere/4.png",
+        "/images/projects/MavSphere/5.png",
+        "/images/projects/MavSphere/6.png",
+        "/images/projects/MavSphere/7.png",
+        "/images/projects/MavSphere/8.png",
+        "/images/projects/MavSphere/9.png"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "MySQL",
+        "NextAuth",
+        "Prisma",
+        "Websockets.io"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/mavsphere",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Real-time forums and discussion boards",
+        "Job board with automated matching",
+        "Mentorship connection system",
+        "Real-time chat functionality",
+        "Profile management and networking features"
+      ],
+      "categories": ["Full Stack"]
+    },
+    {
+      "title": "MavLynx - AI-Powered Mobile International Student Support App",
+      "description": "Cross-platform mobile application providing personalized support for international students, featuring AI-powered assistance and real-time features for housing, academic holds, phone plans, and club recommendations.",
+      "images": [
+        "/images/projects/MavLynx/1.png",
+        "/images/projects/mavlynx/2.png",
+        "/images/projects/MavLynx/3.png",
+        "/images/projects/MavLynx/4.png",
+        "/images/projects/MavLynx/5.png",
+        "/images/projects/MavLynx/6.png"
+      ],
+      "technologies": [
+        "React Native",
+        "React Native Paper",
+        "Expo",
+        "Andriod Studio",
+        "Node.js",
+        "Firebase",
+        "RAG Pipeline",
+        "Clerk",
+        "LLM"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/MavLynx",
+      "liveUrl": "",
+      "keyFeatures": [
+        "LLM-powered RAG pipeline for context-aware AI assistance",
+        "Secure authentication with Clerk integration",
+        "Real-time GPS tracking and location services",
+        "Push notifications for important updates",
+        "Firebase cloud functions for serverless operations",
+        "Personalized recommendations for housing and campus activities"
+      ],
+      "categories": ["Mobile", "ML/AI"]
+    },
+    {
+      "title": "PoseMaster – Real-Time Yoga Pose Detection System",
+      "description": "Advanced computer vision system for real-time yoga pose detection and classification using ensemble machine learning models",
+      "images": [
+        "/projects/posemaster.png",
+        "/projects/posemaster-2.png",
+        "/projects/posemaster-3.png"
+      ],
+      "technologies": [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "Scikit-learn",
+        "CATBoost",
+        "Random Forest",
+        "Support Vector Machine",
+        "Model Stacking",
+        "TensorFlow"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/PoseMaster",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Real-time pose detection and classification system",
+        "Advanced feature extraction pipeline for joint angles and body proportions",
+        "Stacked ensemble model with 98% training and 80% test accuracy",
+        "Support for multiple yoga poses including Plank, Downward Dog, and Warrior 2",
+        "Real-time feedback on pose alignment and classification",
+        "Robust data preprocessing with augmentation and outlier removal"
+      ],
+      "categories": ["ML/AI", "Computer Vision"]
+    },
+    {
+      "title": "FormIQ – Real-Time Exercise Pose Detection & Feedback",
+      "description": "A real-time workout posture detection and feedback using dense neural network, CNN, and MediaPipe",
+      "images": [
+        "/projects/formiq.png",
+        "/projects/formiq-2.png",
+        "/projects/formiq-3.png"
+      ],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "MediaPipe",
+        "OpenCV",
+        "NumPy",
+        "CNN",
+        "Dense Neural Network"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/FormIQ",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Real-time 33-point body landmark detection system",
+        "Custom Dense Neural Network and CNN models for posture classification",
+        "End-to-end pipeline for data collection and preprocessing",
+        "Interactive UI with instant exercise form feedback",
+        "Modular architecture for easy exercise additions",
+        "Robust landmark normalization and visibility checks"
+      ],
+      "categories": ["ML/AI"]
+    },
+    {
+      "title": "MediClerk – Healthcare Assistant & Wellness Tracker",
+      "description": "Comprehensive mobile healthcare application combining AI-powered medical assistance with personal wellness tracking and secure data management",
+      "images": [
+        "/images/projects/WellnessWave/1.png",
+        "/images/projects/WellnessWave/2.png",
+        "/images/projects/WellnessWave/3.png",
+        "/images/projects/WellnessWave/4.png",
+        "/images/projects/WellnessWave/5.png",
+        "/images/projects/WellnessWave/6.png"
+      ],
+      "technologies": [
+        "React Native",
+        "React Native Paper",
+        "Expo",
+        "Firebase",
+        "Grok AI",
+        "TypeScript",
+        "Clerk",
+        "Lottie",
+        "AsyncStorage"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/medi_clerk",
+      "liveUrl": "",
+      "keyFeatures": [
+        "AI-powered medical guidance using Grok AI",
+        "Secure authentication and data management with Clerk",
+        "Interactive wellness tracking with charts and calendars",
+        "Modern UI with custom animations via Lottie",
+        "Speech recognition and image processing capabilities",
+        "Real-time data sync and offline functionality",
+        "Privacy-focused design for medical data"
+      ],
+      "categories": ["Mobile", "ML/AI"]
+    },
+    {
+      "title": "DistribuSync - Distributed File System & Computation Service",
+      "description": "Advanced distributed system implementing real-time file synchronization and remote computation capabilities with multi-threaded architecture",
+      "images": [
+        "/projects/distribusync.png",
+        "/projects/distribusync-2.png",
+        "/projects/distribusync-3.png"
+      ],
+      "technologies": [
+        "Python",
+        "RPyC",
+        "Threading",
+        "Socket Programming",
+        "UTF-8",
+        "Client-Server Architecture"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/distribusync",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Multi-threaded architecture for continuous file monitoring",
+        "Synchronous and asynchronous remote computation services",
+        "Comprehensive file system operations with automatic replication",
+        "Thread-safe synchronization mechanisms for data consistency",
+        "Modular component architecture for maintainability",
+        "Robust error handling and UTF-8 encoding support",
+        "Distinct client interfaces for different service types"
+      ],
+      "categories": ["Distributed Systems"]
+    },
+    {
+      "title": "Bank Transaction System - Distributed Two-Phase Commit Protocol Implementation",
+      "description": "Fault-tolerant distributed banking system implementing Two-Phase Commit protocol for consistent transactions across multiple nodes",
+      "images": [
+        "/projects/bank-transaction.png",
+        "/projects/bank-transaction-2.png",
+        "/projects/bank-transaction-3.png"
+      ],
+      "technologies": [
+        "Python",
+        "XML-RPC",
+        "TinyDB",
+        "Two-Phase Commit",
+        "Distributed Systems",
+        "Fault Tolerance"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/Bank-Transaction-system",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Two-Phase Commit protocol implementation for distributed consistency",
+        "Fault-tolerant architecture with Transaction Coordinator",
+        "Comprehensive failure handling for 5 critical scenarios",
+        "Persistent transaction logging with TinyDB",
+        "Concurrent debit/credit operations with atomicity guarantees",
+        "5-second timeout mechanism with account locking",
+        "100% transaction consistency across node failures"
+      ],
+      "categories": ["Distributed Systems"]
+    },
+    {
+      "title": "MavBudgetz - Personal Finance Tracker",
+      "description": "Modern web-based personal finance platform with comprehensive expense tracking and visual analytics, designed specifically for student budgeting needs",
+      "images": [
+        "/images/projects/MavBudgetz/1.png",
+        "/images/projects/MavBudgetz/2.png",
+        "/images/projects/MavBudgetz/3.png",
+        "/images/projects/MavBudgetz/4.png",
+        "/images/projects/MavBudgetz/5.png",
+        "/images/projects/MavBudgetz/6.png",
+        "/images/projects/MavBudgetz/7.png",
+        "/images/projects/MavBudgetz/8.png",
+        "/images/projects/MavBudgetz/9.png"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "MySQL",
+        "Prisma",
+        "Clerk",
+        "Next.js"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/MavBudgetz",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Comprehensive expense tracking with custom categories",
+        "Interactive data visualization with charts and graphs",
+        "Secure authentication via Clerk",
+        "Dark/Light theme support with responsive design",
+        "77% test coverage across unit and integration tests",
+        "Optimized performance with high Lighthouse scores",
+        "Structured database schema using Prisma ORM"
+      ],
+      "categories": ["Full Stack"]
+    },
+    {
+      "title": "SWIM Protocol Implementation - Distributed Membership Protocol",
+      "description": "Advanced implementation of the SWIM (Scalable Weakly-consistent Infection-style Process Group Membership) Protocol using gRPC and a hybrid Python/C++ architecture for robust distributed systems",
+      "images": [
+        "/projects/swim-protocol.png",
+        "/projects/swim-protocol-2.png",
+        "/projects/swim-protocol-3.png"
+      ],
+      "technologies": [
+        "Python",
+        "C++",
+        "gRPC",
+        "Docker",
+        "CMake",
+        "Distributed Systems",
+        "Protocol Buffers",
+        "Thread Safety"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/SWIM-Protocol",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Hybrid Python/C++ implementation for optimal performance",
+        "Ping-based failure detection with configurable intervals",
+        "Thread-safe membership management with version vectors",
+        "Dynamic node join/leave capabilities",
+        "Comprehensive test suite for various failure scenarios",
+        "Docker-based deployment with multi-container support",
+        "Efficient state recovery and conflict resolution"
+      ],
+      "categories": ["Distributed Systems"]
+    }
+  ]
+}

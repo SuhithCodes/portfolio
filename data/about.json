@@ -1,0 +1,108 @@
+{
+  "overview": {
+    "name": "Suhith Ghanathay",
+    "title": "Full Stack Developer & AI Engineer",
+    "location": "Dallas, TX",
+    "description": [
+      "Experienced Full Stack Developer with 4+ years in the software industry, currently pursuing MS in Computer Science at UT Arlington with a focus on Intelligent Systems and Software Engineering.",
+      "My expertise spans modern web technologies, mobile development, and AI/ML, with a strong foundation in both frontend and backend development. I specialize in building scalable applications using React, Next.js, and Node.js, while leveraging AI/ML technologies to create intelligent solutions.",
+      "In my previous role at Capgemini, I significantly improved system performance and automated testing workflows, demonstrating my commitment to delivering high-quality software solutions. My current focus includes developing AI-powered applications and exploring innovative ways to integrate machine learning into web and mobile platforms."
+    ],
+    "stats": [
+      {
+        "value": 4,
+        "label": "Years Experience",
+        "icon": "Briefcase"
+      },
+      {
+        "value": 30,
+        "label": "Projects Completed",
+        "icon": "CheckCircle"
+      },
+      {
+        "value": 100,
+        "label": "Iterations",
+        "icon": "Zap"
+      },
+      {
+        "value": 8,
+        "label": "Domains",
+        "icon": "Globe"
+      }
+    ],
+    "technologies": {
+      "frontend": ["React", "Next.js", "React Native", "Tailwind"],
+      "backend": ["Node.js", "Firebase", "MySQL", "REST APIs"],
+      "testing": ["Selenium", "Jasmine", "LoadRunner", "JMeter"],
+      "ai_ml": ["RAG Pipelines", "LLMs", "TensorFlow", "NLP"],
+      "devops": ["Docker", "Jenkins", "Grafana", "Ansible"],
+      "mobile": ["React Native", "Expo", "NativeWind"]
+    }
+  },
+  "tools": [
+    "Git",
+    "Docker",
+    "AWS",
+    "Linux",
+    "Nginx",
+    "Apache",
+    "Webpack",
+    "Vite",
+    "Composer",
+    "npm",
+    "Postman",
+    "VS Code",
+    "PHPStorm",
+    "GitHub Actions",
+    "Jenkins",
+    "Jira"
+  ],
+  "softSkills": [
+    {
+      "name": "Problem Solving",
+      "icon": "Lightbulb"
+    },
+    {
+      "name": "Communication",
+      "icon": "Globe"
+    },
+    {
+      "name": "Teamwork",
+      "icon": "Heart"
+    },
+    {
+      "name": "Adaptability",
+      "icon": "Zap"
+    }
+  ],
+  "hobbies": [
+    {
+      "label": "Prototyping",
+      "icon": "Boxes"
+    },
+    {
+      "label": "Reading",
+      "icon": "BookOpen"
+    },
+    {
+      "label": "Hiking",
+      "icon": "Mountain"
+    },
+    {
+      "label": "Photography",
+      "icon": "Camera"
+    },
+    {
+      "label": "3D Printing",
+      "icon": "Printer"
+    },
+    {
+      "label": "Gaming",
+      "icon": "Gamepad"
+    },
+    {
+      "label": "Open Source",
+      "icon": "Code"
+    }
+  ]
+}

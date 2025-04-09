@@ -1,0 +1,72 @@
+{
+  "sectionInfo": {
+    "title": "Professional Experience",
+    "description": "My journey as a developer, showcasing the projects and roles that have shaped my career."
+  },
+  "jobs": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Capgemini",
+      "location": "Transportation Industry",
+      "period": " Jul 2020 - Jul 2023",
+      "type": "fulltime",
+      "description": "Led performance optimization initiatives and automated testing workflows for transportation industry applications. Focused on system performance analysis and documentation.",
+      "technologies": [
+        "Jenkins",
+        "LoadRunner",
+        "Performance Testing",
+        "System Architecture",
+        "Documentation"
+      ],
+      "achievements": [
+        "Reduced system response time by 20% through performance optimization",
+        "Improved application speed via in-depth performance analysis",
+        "Automated testing with Jenkins, reducing manual effort by 40%",
+        "Created system documentation, reducing onboarding time by 30%"
+      ]
+    },
+    {
+      "title": "Junior Software Analyst",
+      "company": "Capgemini",
+      "location": "Telecom Industry",
+      "period": "Jun 2019 - Jun 2020",
+      "type": "fulltime",
+      "description": "Focused on test automation and analysis using the Jasmine framework. Developed maintainable automation code and managed test cases based on customer requirements.",
+      "technologies": [
+        "Jasmine",
+        "Test Automation",
+        "Software Analysis",
+        "Time Management"
+      ],
+      "achievements": [
+        "Analyzed 100+ test cases using Jasmine, improving efficiency by 25%",
+        "Increased test coverage by 30% through automation",
+        "Met 100% project deadlines through effective task prioritization"
+      ]
+    },
+    {
+      "title": "IoT Engineering Intern",
+      "company": "Electronics Corporation of India Limited (ECIL)",
+      "location": "Hyderabad, Telangana, India",
+      "period": "May 2018 - Dec 2018",
+      "type": "internship",
+      "description": "Developed IoT solutions for industrial automation and smart agriculture applications. Specialized in sensor integration, embedded systems programming, and mobile app development for remote monitoring and control systems.",
+      "technologies": [
+        "Arduino",
+        "Embedded Systems",
+        "Sensors",
+        "C/C++",
+        "IoT Protocols",
+        "Android Development",
+        "Circuit Design",
+        "Bluetooth/WiFi"
+      ],
+      "achievements": [
+        "Built smart plant nursery system with Arduino for automated environmental control",
+        "Developed Android app for remote monitoring, improving efficiency by 70%",
+        "Achieved 95% accuracy in sensor measurements and data processing",
+        "Created system documentation and collaborated with agricultural experts"
+      ]
+    }
+  ]
+}
