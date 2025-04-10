@@ -108,152 +108,154 @@ export default function EducationTimelineItem({
         )}
         whileHover={{ y: -5 }}
       >
-        <Card
-          className={cn(
-            "overflow-hidden transition-all duration-300",
-            isExpanded ? "shadow-lg" : ""
-          )}
-        >
-          <CardHeader className="p-3">
-            <div className="flex items-start justify-between">
-              <div>
-                <CardTitle
-                  className={cn(
-                    "text-base text-primary",
-                    education.barColor === "bg-[#d53f8c]"
-                      ? "text-secondary"
-                      : education.barColor === "bg-[#4361ee]"
-                      ? "text-primary"
-                      : "text-green-500"
-                  )}
-                >
-                  {education.title}
-                </CardTitle>
-                <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
-                  <School className="h-3 w-3" />
-                  <span>{education.institution}</span>
-                </CardDescription>
-                <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
-                  <MapPin className="h-3 w-3" />
-                  <span>{education.location}</span>
-                </CardDescription>
-              </div>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onToggle();
-                }}
-              >
-                {isExpanded ? (
-                  <ChevronUp className="h-3 w-3" />
-                ) : (
-                  <ChevronDown className="h-3 w-3" />
-                )}
-              </Button>
-            </div>
-          </CardHeader>
-          <div className={cn("h-1 w-full", education.barColor)}></div>
-          <CardContent className="pt-4">
-            {education.grade && (
-              <div className="flex items-center gap-1.5 mb-3">
-                {education.showStar && (
-                  <Star className="h-3 w-3 text-yellow-400 fill-yellow-400" />
-                )}
-                <span className="text-xs font-medium">{education.grade}</span>
-              </div>
+        <div className="pt-10">
+          <Card
+            className={cn(
+              "overflow-hidden transition-all duration-300",
+              isExpanded ? "shadow-lg" : ""
             )}
-
-            <p className="text-xs text-muted-foreground mb-3">
-              {education.description}
-            </p>
-
-            {/* Expanded Content */}
-            <AnimatePresence>
-              {isExpanded && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
+          >
+            <CardHeader className="p-3">
+              <div className="flex items-start justify-between">
+                <div>
+                  <CardTitle
+                    className={cn(
+                      "text-base text-primary",
+                      education.barColor === "bg-[#d53f8c]"
+                        ? "text-secondary"
+                        : education.barColor === "bg-[#4361ee]"
+                          ? "text-primary"
+                          : "text-green-500"
+                    )}
+                  >
+                    {education.title}
+                  </CardTitle>
+                  <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
+                    <School className="h-3 w-3" />
+                    <span>{education.institution}</span>
+                  </CardDescription>
+                  <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
+                    <MapPin className="h-3 w-3" />
+                    <span>{education.location}</span>
+                  </CardDescription>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggle();
+                  }}
                 >
-                  <div className="pt-3 mt-3 border-t">
-                    {/* Key Achievements */}
-                    {education.achievements && (
-                      <div className="mb-3">
-                        <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
-                          <Award className="h-3 w-3 text-yellow-500" />
-                          Key Achievements
-                        </h4>
-                        <ul className="space-y-1.5">
-                          {education.achievements.map(
-                            (achievement, achievementIndex) => (
+                  {isExpanded ? (
+                    <ChevronUp className="h-3 w-3" />
+                  ) : (
+                    <ChevronDown className="h-3 w-3" />
+                  )}
+                </Button>
+              </div>
+            </CardHeader>
+            <div className={cn("h-1 w-full", education.barColor)}></div>
+            <CardContent className="pt-4">
+              {education.grade && (
+                <div className="flex items-center gap-1.5 mb-3">
+                  {education.showStar && (
+                    <Star className="h-3 w-3 text-yellow-400 fill-yellow-400" />
+                  )}
+                  <span className="text-xs font-medium">{education.grade}</span>
+                </div>
+              )}
+
+              <p className="text-xs text-muted-foreground mb-3">
+                {education.description}
+              </p>
+
+              {/* Expanded Content */}
+              <AnimatePresence>
+                {isExpanded && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="pt-3 mt-3 border-t">
+                      {/* Key Achievements */}
+                      {education.achievements && (
+                        <div className="mb-3">
+                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
+                            <Award className="h-3 w-3 text-yellow-500" />
+                            Key Achievements
+                          </h4>
+                          <ul className="space-y-1.5">
+                            {education.achievements.map(
+                              (achievement, achievementIndex) => (
+                                <li
+                                  key={achievementIndex}
+                                  className="flex items-start gap-1.5"
+                                >
+                                  <Award className="h-3 w-3 text-yellow-400 mt-0.5 flex-shrink-0" />
+                                  <span className="text-xs text-muted-foreground">
+                                    {achievement}
+                                  </span>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Courses */}
+                      {education.courses && (
+                        <div className="mb-3">
+                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
+                            <BookOpen className="h-3 w-3 text-blue-500" />
+                            Notable Courses
+                          </h4>
+                          <div className="flex flex-wrap gap-1.5">
+                            {education.courses.map((course, courseIndex) => (
+                              <Badge
+                                key={courseIndex}
+                                variant="outline"
+                                className="bg-muted/30 text-[10px] px-1.5 py-0.5"
+                              >
+                                {course}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Projects */}
+                      {education.projects && (
+                        <div>
+                          <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
+                            <FileText className="h-3 w-3 text-green-500" />
+                            Academic Projects
+                          </h4>
+                          <ul className="space-y-1.5">
+                            {education.projects.map((project, projectIndex) => (
                               <li
-                                key={achievementIndex}
+                                key={projectIndex}
                                 className="flex items-start gap-1.5"
                               >
-                                <Award className="h-3 w-3 text-yellow-400 mt-0.5 flex-shrink-0" />
-                                <span className="text-xs text-muted-foreground">
-                                  {achievement}
+                                <div className="h-1.5 w-1.5 rounded-full bg-green-500 mt-1.5 flex-shrink-0"></div>
+                                <span className="text-xs text-muted-foreground text-left">
+                                  {project}
                                 </span>
                               </li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                    )}
-
-                    {/* Courses */}
-                    {education.courses && (
-                      <div className="mb-3">
-                        <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
-                          <BookOpen className="h-3 w-3 text-blue-500" />
-                          Notable Courses
-                        </h4>
-                        <div className="flex flex-wrap gap-1.5">
-                          {education.courses.map((course, courseIndex) => (
-                            <Badge
-                              key={courseIndex}
-                              variant="outline"
-                              className="bg-muted/30 text-[10px] px-1.5 py-0.5"
-                            >
-                              {course}
-                            </Badge>
-                          ))}
+                            ))}
+                          </ul>
                         </div>
-                      </div>
-                    )}
-
-                    {/* Projects */}
-                    {education.projects && (
-                      <div>
-                        <h4 className="text-xs font-medium mb-2 flex items-center gap-1.5">
-                          <FileText className="h-3 w-3 text-green-500" />
-                          Academic Projects
-                        </h4>
-                        <ul className="space-y-1.5">
-                          {education.projects.map((project, projectIndex) => (
-                            <li
-                              key={projectIndex}
-                              className="flex items-start gap-1.5"
-                            >
-                              <div className="h-1.5 w-1.5 rounded-full bg-green-500 mt-1.5 flex-shrink-0"></div>
-                              <span className="text-xs text-muted-foreground text-left">
-                                {project}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </CardContent>
-        </Card>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </CardContent>
+          </Card>
+        </div>
       </motion.div>
     </motion.div>
   );
