@@ -186,7 +186,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       >
         {/* Project Image */}
         <div className="aspect-[16/9] relative bg-black/5">
-          {project.images && project.images.length > 0 ? (
+          {!project.images ||
+          !Array.isArray(project.images) ||
+          project.images.length === 0 ? (
+            <BlankProjectImage />
+          ) : (
             <ImageCarousel
               images={project.images}
               currentIndex={currentImageIndex}
@@ -194,8 +198,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               onPrev={handlePrevImage}
               showControls={isHovered}
             />
-          ) : (
-            <BlankProjectImage />
           )}
           <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
             <span className="text-white text-sm">View Details</span>
@@ -234,14 +236,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       {/* Project Details Modal */}
       {isModalOpen && (
-        <div
-          className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-2"
-          onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              setIsModalOpen(false);
-            }
-          }}
-        >
+        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-2">
           <div className="bg-card rounded-lg max-w-2xl w-full relative">
             {/* Close button */}
             <button
@@ -259,7 +254,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
               {/* Project Image */}
               <div className="relative rounded-lg overflow-hidden mb-3">
-                {project.images && project.images.length > 0 ? (
+                {!project.images ||
+                !Array.isArray(project.images) ||
+                project.images.length === 0 ? (
+                  <BlankProjectImage />
+                ) : (
                   <ImageCarousel
                     images={project.images}
                     currentIndex={currentImageIndex}
@@ -267,8 +266,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                     onPrev={handlePrevImage}
                     showControls={true}
                   />
-                ) : (
-                  <BlankProjectImage />
                 )}
               </div>
 
