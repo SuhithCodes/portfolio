@@ -28,27 +28,12 @@ interface ProjectCardProps {
 
 function BlankProjectImage() {
   return (
-    <div className="w-full h-full bg-gradient-to-br from-primary/5 to-primary/10 flex flex-col items-center justify-center gap-2">
-      <div className="text-primary/50">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-          <circle cx="9" cy="9" r="2" />
-          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-        </svg>
-      </div>
-      <div className="text-primary/40 text-xs font-medium">
-        No Preview Available
-      </div>
+    <div className="w-full h-full bg-black flex items-center justify-center">
+      <img
+        src="/nopreview.png"
+        alt="No Preview Available"
+        className="w-full h-full object-contain"
+      />
     </div>
   );
 }
@@ -236,7 +221,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
       {/* Project Details Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-2">
+        <div
+          className="fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-50 p-2"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setIsModalOpen(false);
+            }
+          }}
+        >
           <div className="bg-card rounded-lg max-w-2xl w-full relative">
             {/* Close button */}
             <button
