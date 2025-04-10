@@ -180,11 +180,7 @@
     {
       "title": "PoseMaster – Real-Time Yoga Pose Detection System",
       "description": "Advanced computer vision system for real-time yoga pose detection and classification using ensemble machine learning models",
-      "images": [
-        "/projects/posemaster.png",
-        "/projects/posemaster-2.png",
-        "/projects/posemaster-3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "OpenCV",
@@ -211,11 +207,7 @@
     {
       "title": "FormIQ – Real-Time Exercise Pose Detection & Feedback",
       "description": "A real-time workout posture detection and feedback using dense neural network, CNN, and MediaPipe",
-      "images": [
-        "/projects/formiq.png",
-        "/projects/formiq-2.png",
-        "/projects/formiq-3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "TensorFlow",
@@ -240,11 +232,7 @@
     {
       "title": "DistribuSync - Distributed File System & Computation Service",
       "description": "Advanced distributed system implementing real-time file synchronization and remote computation capabilities with multi-threaded architecture",
-      "images": [
-        "/projects/distribusync.png",
-        "/projects/distribusync-2.png",
-        "/projects/distribusync-3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "RPyC",
@@ -269,11 +257,7 @@
     {
       "title": "Bank Transaction System - Distributed Two-Phase Commit Protocol Implementation",
       "description": "Fault-tolerant distributed banking system implementing Two-Phase Commit protocol for consistent transactions across multiple nodes",
-      "images": [
-        "/projects/bank-transaction.png",
-        "/projects/bank-transaction-2.png",
-        "/projects/bank-transaction-3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "XML-RPC",
@@ -298,11 +282,7 @@
     {
       "title": "SWIM Protocol Implementation - Distributed Membership Protocol",
       "description": "Advanced implementation of the SWIM (Scalable Weakly-consistent Infection-style Process Group Membership) Protocol using gRPC and a hybrid Python/C++ architecture for robust distributed systems",
-      "images": [
-        "/projects/swim-protocol.png",
-        "/projects/swim-protocol-2.png",
-        "/projects/swim-protocol-3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "C++",
@@ -329,11 +309,7 @@
     {
       "title": "RAFT Protocol Implementation - Distributed Consensus Protocol",
       "description": "A comprehensive implementation of the RAFT consensus protocol in Python, enabling distributed systems to maintain consistency across multiple nodes even in the presence of network failures.",
-      "images": [
-        "/images/projects/RAFT/1.png",
-        "/images/projects/RAFT/2.png",
-        "/images/projects/RAFT/3.png"
-      ],
+      "images": ["/nopreview.png"],
       "technologies": [
         "Python",
         "gRPC",
