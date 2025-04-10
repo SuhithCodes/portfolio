@@ -80,10 +80,9 @@
       "category": "software development",
       "description": "Comprehensive course covering Agile methodologies, Scrum practices, and modern software development approaches, authorized by University of Minnesota and offered through Coursera.",
       "skills": [
-        "Planning",
         "Project Management",
         "Scrum",
-        "Design and Product",
+        "Collaboration",
         "Software Development Kit (SDK)"
       ],
       "topics": [
@@ -94,7 +93,7 @@
         "Team Collaboration",
         "Software Development Lifecycle"
       ],
-      "image": "/images/certificates/agile-software-development.png",
+      "image": "/images/certificates/agile-software-development.jpeg",
       "url": "https://www.coursera.org/account/accomplishments/verify/PLXFXNNFDRYA"
     },
     {
@@ -118,7 +117,7 @@
         "File System Navigation",
         "Compression and Networking Commands"
       ],
-      "image": "/images/certificates/ibm-linux-commands.png",
+      "image": "/images/certificates/ibm-linux-commands.jpeg",
       "url": "https://www.coursera.org/account/accomplishments/verify/VEQPYTGHHEU9"
     },
     {
@@ -138,7 +137,7 @@
         "Leadership",
         "Lean Six Sigma"
       ],
-      "image": "/images/certificates/six-sigma-principles.png",
+      "image": "/images/certificates/six-sigma-principles.jpeg",
       "url": "https://www.coursera.org/account/accomplishments/verify/8274K8TQ68Y6e"
     },
     {
@@ -163,7 +162,7 @@
         "Functions and Loops",
         "Program Flow Control"
       ],
-      "image": "/images/certificates/python-programming.png",
+      "image": "/images/certificates/python-programming.jpeg",
       "url": "https://www.coursera.org/account/accomplishments/verify/YUAGWXRD6YM4"
     },
     {
