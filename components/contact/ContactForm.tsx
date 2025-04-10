@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
 
 interface FormFields {
   [key: string]: {
@@ -18,6 +19,8 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ formFields }: ContactFormProps) {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
@@ -32,11 +35,41 @@ export function ContactForm({ formFields }: ContactFormProps) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description:
+          error instanceof Error ? error.message : "Failed to send message",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const getIcon = (iconName?: string) => {
@@ -84,6 +117,7 @@ export function ContactForm({ formFields }: ContactFormProps) {
                           placeholder={config.placeholder}
                           className={config.icon ? "pl-10" : ""}
                           required
+                          disabled={isLoading}
                         />
                       </div>
                     </div>
@@ -105,6 +139,7 @@ export function ContactForm({ formFields }: ContactFormProps) {
                   onChange={handleChange}
                   placeholder={formFields.subject.placeholder}
                   required
+                  disabled={isLoading}
                 />
               </div>
 
@@ -123,11 +158,13 @@ export function ContactForm({ formFields }: ContactFormProps) {
                   placeholder={formFields.message.placeholder}
                   className="min-h-[120px]"
                   required
+                  disabled={isLoading}
                 />
               </div>
 
-              <Button type="submit" className="w-full">
-                <Send className="mr-2 h-4 w-4" /> Send Message
+              <Button type="submit" className="w-full" disabled={isLoading}>
+                <Send className="mr-2 h-4 w-4" />
+                {isLoading ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </CardContent>

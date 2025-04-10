@@ -7,8 +7,8 @@
       "name": "React",
       "description": "JavaScript library for building user interfaces",
       "category": "frontend",
-      "level": 4,
-      "experience": 85,
+      "level": 3,
+      "experience": 60,
       "tags": ["Frontend", "Library", "JavaScript"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": [
@@ -21,8 +21,8 @@
       "name": "TypeScript",
       "description": "TypeScript library for building user interfaces",
       "category": "frontend",
-      "level": 4,
-      "experience": 85,
+      "level": 2,
+      "experience": 40,
       "tags": ["Frontend", "Library", "TypeScript"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": ["Built interactive UIs with TypeScript"]
@@ -47,7 +47,7 @@
       "description": "JavaScript library for building user interfaces",
       "category": "backend",
       "level": 4,
-      "experience": 85,
+      "experience": 80,
       "tags": ["Backend", "Library", "JavaScript"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": ["Built interactive UIs with JavaScript"]
@@ -57,8 +57,8 @@
       "name": "Next.js",
       "description": "React framework for production-grade applications",
       "category": "frontend",
-      "level": 4,
-      "experience": 80,
+      "level": 3,
+      "experience": 60,
       "tags": ["Frontend", "Framework", "React"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": [
@@ -71,8 +71,8 @@
       "name": "Node.js",
       "description": "JavaScript runtime for server-side programming",
       "category": "backend",
-      "level": 4,
-      "experience": 80,
+      "level": 3,
+      "experience": 60,
       "tags": ["Backend", "JavaScript", "Runtime"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": [
@@ -86,7 +86,7 @@
       "description": "Relational database management system",
       "category": "database",
       "level": 4,
-      "experience": 85,
+      "experience": 80,
       "tags": ["Database", "SQL", "Data Storage"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": [
@@ -99,8 +99,8 @@
       "name": "SQLPlus",
       "description": "Relational database management system",
       "category": "database",
-      "level": 4,
-      "experience": 85,
+      "level": 3,
+      "experience": 60,
       "tags": ["Database", "SQL", "Data Storage"],
       "projects": ["UTAMarket", "MavSphere", "MavBudgetz"],
       "achievements": [
@@ -112,10 +112,10 @@
       "id": 9,
       "name": "TypeScript",
       "description": "Typed superset of JavaScript",
-      "category": "frontend",
-      "level": 4,
-      "experience": 80,
-      "tags": ["Frontend", "Backend", "Type Safety"],
+      "category": "backend",
+      "level": 3,
+      "experience": 60,
+      "tags": ["Backend", "Type Safety"],
       "projects": ["MediClerk", "MavBudgetz"],
       "achievements": [
         "Implemented robust type-safe applications",
@@ -127,8 +127,8 @@
       "name": "React Native",
       "description": "Framework for building native mobile apps with React",
       "category": "mobile",
-      "level": 4,
-      "experience": 75,
+      "level": 3,
+      "experience": 60,
       "tags": ["Mobile", "Cross-platform", "JavaScript"],
       "projects": ["MavLynx", "MediClerk"],
       "achievements": [
@@ -138,16 +138,16 @@
     },
     {
       "id": 11,
-      "name": "Firebase",
+      "name": "PostgreSQL",
       "description": "Platform for developing mobile and web applications",
-      "category": "backend",
-      "level": 3,
-      "experience": 70,
+      "category": "database",
+      "level": 1,
+      "experience": 20,
       "tags": ["Backend", "Database", "Authentication"],
-      "projects": ["MavLynx", "MediClerk"],
+      "projects": ["MavBudgetz"],
       "achievements": [
         "Implemented real-time database for instant updates",
-        "Utilized Firebase Authentication for secure user management"
+        "Utilized PostgreSQL Authentication for secure user management"
       ]
     },
     {
@@ -155,8 +155,8 @@
       "name": "Firestore",
       "description": "Platform for developing mobile and web applications",
       "category": "database",
-      "level": 3,
-      "experience": 70,
+      "level": 4,
+      "experience": 80,
       "tags": ["Database", "NoSQL", "Authentication"],
       "projects": ["MavLynx", "MediClerk"],
       "achievements": ["Implemented real-time database for instant updates"]
@@ -167,7 +167,7 @@
       "description": "High-level programming language for general-purpose programming",
       "category": "backend",
       "level": 4,
-      "experience": 85,
+      "experience": 80,
       "tags": ["Backend", "Data Science", "Scripting"],
       "projects": ["PoseMaster", "FormIQ", "DistribuSync", "SWIM Protocol"],
       "achievements": [
@@ -181,7 +181,7 @@
       "description": "Open-source machine learning framework",
       "category": "ai_ml",
       "level": 3,
-      "experience": 70,
+      "experience": 75,
       "tags": ["AI", "Machine Learning", "Deep Learning"],
       "projects": ["PoseMaster", "FormIQ", "UTAMarket"],
       "achievements": [
@@ -194,8 +194,8 @@
       "name": "Machine Learning",
       "description": "Field of AI focused on building systems that learn from data",
       "category": "ai_ml",
-      "level": 3,
-      "experience": 75,
+      "level": 4,
+      "experience": 80,
       "tags": ["AI", "Data Science", "Algorithms"],
       "projects": ["PoseMaster", "FormIQ", "UTAMarket"],
       "achievements": [
@@ -208,8 +208,8 @@
       "name": "C++",
       "description": "High-performance programming language",
       "category": "backend",
-      "level": 3,
-      "experience": 65,
+      "level": 1,
+      "experience": 20,
       "tags": ["Systems Programming", "Performance", "Low-level"],
       "projects": ["SWIM Protocol"],
       "achievements": [
@@ -236,8 +236,8 @@
       "name": "Prisma",
       "description": "Next-generation ORM for Node.js and TypeScript",
       "category": "database",
-      "level": 3,
-      "experience": 70,
+      "level": 2,
+      "experience": 50,
       "tags": ["ORM", "Database", "TypeScript"],
       "projects": ["MavSphere", "MavBudgetz"],
       "achievements": [
@@ -250,8 +250,8 @@
       "name": "NextAuth",
       "description": "Security processes that verify user identities",
       "category": "security",
-      "level": 4,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["Security", "Identity", "Authorization"],
       "projects": ["UTAMarket", "MavSphere", "MediClerk"],
       "achievements": [
@@ -278,8 +278,8 @@
       "name": "Jenkins",
       "description": "Open-source automation server for CI/CD pipelines",
       "category": "devops",
-      "level": 4,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["DevOps", "CI/CD", "Automation"],
       "projects": ["Transportation Industry Projects"],
       "achievements": [
@@ -292,8 +292,8 @@
       "name": "Performance Testing",
       "description": "Techniques and tools for evaluating system performance",
       "category": "systems",
-      "level": 4,
-      "experience": 80,
+      "level": 5,
+      "experience": 100,
       "tags": ["Testing", "LoadRunner", "System Analysis"],
       "projects": ["Transportation Industry Projects"],
       "achievements": [
@@ -306,8 +306,8 @@
       "name": "System Architecture",
       "description": "Design and organization of software systems",
       "category": "systems",
-      "level": 3,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["Architecture", "Design Patterns", "Documentation"],
       "projects": ["Transportation Industry Projects"],
       "achievements": [
@@ -320,8 +320,8 @@
       "name": "Test Automation",
       "description": "Automated software testing using frameworks like Jasmine",
       "category": "testing",
-      "level": 4,
-      "experience": 75,
+      "level": 5,
+      "experience": 100,
       "tags": ["Testing", "Jasmine", "Quality Assurance"],
       "projects": ["Telecom Industry Projects"],
       "achievements": [
@@ -334,8 +334,8 @@
       "name": "IoT Development",
       "description": "Development of Internet of Things solutions and embedded systems",
       "category": "embedded",
-      "level": 3,
-      "experience": 70,
+      "level": 2,
+      "experience": 40,
       "tags": ["IoT", "Arduino", "Embedded Systems", "Sensors"],
       "projects": ["Smart Plant Nursery System"],
       "achievements": [
@@ -348,8 +348,8 @@
       "name": "Android Development",
       "description": "Native Android application development",
       "category": "mobile",
-      "level": 3,
-      "experience": 70,
+      "level": 1,
+      "experience": 20,
       "tags": ["Mobile", "Android", "Java"],
       "projects": ["Smart Plant Monitoring App"],
       "achievements": [
@@ -363,7 +363,7 @@
       "description": "Cross-platform framework for building multimodal ML solutions",
       "category": "ai_ml",
       "level": 3,
-      "experience": 70,
+      "experience": 75,
       "tags": ["AI", "Computer Vision", "ML Pipeline"],
       "projects": ["PoseMaster", "FormIQ"],
       "achievements": [
@@ -390,8 +390,8 @@
       "name": "Cucumber",
       "description": "BDD testing framework supporting multiple programming languages",
       "category": "testing",
-      "level": 3,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["BDD", "Testing", "Automation"],
       "projects": ["MavSphere", "MavBudgetz"],
       "achievements": [
@@ -432,8 +432,8 @@
       "name": "Tailwind CSS",
       "description": "Utility-first CSS framework for rapid UI development",
       "category": "frontend",
-      "level": 4,
-      "experience": 85,
+      "level": 2,
+      "experience": 40,
       "tags": ["CSS", "UI Design", "Responsive"],
       "projects": ["UTAMarket", "MavSphere", "Portfolio"],
       "achievements": [
@@ -446,8 +446,8 @@
       "name": "React Native Paper",
       "description": "Material Design components for React Native",
       "category": "mobile",
-      "level": 4,
-      "experience": 80,
+      "level": 3,
+      "experience": 75,
       "tags": ["Mobile UI", "Material Design", "React Native"],
       "projects": ["MavLynx", "MediClerk"],
       "achievements": [
@@ -460,8 +460,8 @@
       "name": "Docker",
       "description": "Container orchestration and deployment platform",
       "category": "devops",
-      "level": 3,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["Containerization", "Orchestration", "DevOps"],
       "projects": ["DistribuSync", "MavSphere"],
       "achievements": [
@@ -474,8 +474,8 @@
       "name": "ELK Stack",
       "description": "Elasticsearch, Logstash, and Kibana for logging and monitoring",
       "category": "devops",
-      "level": 3,
-      "experience": 70,
+      "level": 2,
+      "experience": 40,
       "tags": ["Monitoring", "Log Analysis", "Visualization"],
       "projects": ["DistribuSync", "Transportation Industry Projects"],
       "achievements": [
@@ -489,7 +489,7 @@
       "description": "Retrieval Augmented Generation using LangChain framework",
       "category": "ai_ml",
       "level": 3,
-      "experience": 75,
+      "experience": 60,
       "tags": ["LLMs", "NLP", "Information Retrieval"],
       "projects": ["UTAMarket", "MavSphere"],
       "achievements": [
@@ -516,8 +516,8 @@
       "name": "Golang Microservices",
       "description": "High-performance microservices with Go",
       "category": "backend",
-      "level": 3,
-      "experience": 75,
+      "level": 1,
+      "experience": 20,
       "tags": ["Go", "Microservices", "gRPC"],
       "projects": ["DistribuSync", "SWIM Protocol"],
       "achievements": [
@@ -527,11 +527,11 @@
     },
     {
       "id": 39,
-      "name": "Postman & Newman",
+      "name": "Postman",
       "description": "API development and automated testing tools",
       "category": "testing",
-      "level": 4,
-      "experience": 85,
+      "level": 2,
+      "experience": 40,
       "tags": ["API Testing", "Automation", "Documentation"],
       "projects": ["UTAMarket", "MavSphere"],
       "achievements": [
@@ -544,8 +544,8 @@
       "name": "Ansible Automation",
       "description": "Infrastructure automation and configuration management",
       "category": "devops",
-      "level": 3,
-      "experience": 75,
+      "level": 2,
+      "experience": 40,
       "tags": ["Infrastructure as Code", "Automation", "DevOps"],
       "projects": ["DistribuSync", "Transportation Industry Projects"],
       "achievements": [
@@ -558,8 +558,8 @@
       "name": "Grafana & Prometheus",
       "description": "Metrics visualization and monitoring stack",
       "category": "devops",
-      "level": 3,
-      "experience": 70,
+      "level": 2,
+      "experience": 40,
       "tags": ["Monitoring", "Metrics", "Alerting"],
       "projects": ["DistribuSync", "MavSphere"],
       "achievements": [
@@ -580,50 +580,6 @@
         "Implemented secure authentication with Clerk",
         "Developed role-based access control systems"
       ]
-    }
-  ],
-  "learningJourney": [
-    {
-      "year": "2020",
-      "title": "Web Development Foundations",
-      "description": "Focused on building modern web applications with React, Node.js, and relational databases.",
-      "category": "frontend",
-      "skills": ["React", "Next.js", "Node.js", "MySQL"]
-    },
-    {
-      "year": "2021",
-      "title": "Mobile Development",
-      "description": "Expanded into cross-platform mobile development with React Native and Firebase.",
-      "category": "mobile",
-      "skills": ["React Native", "Expo", "Firebase", "TypeScript"]
-    },
-    {
-      "year": "2022",
-      "title": "Machine Learning & Computer Vision",
-      "description": "Developed expertise in ML/AI applications focused on computer vision and pose detection.",
-      "category": "ai_ml",
-      "skills": ["Python", "TensorFlow", "OpenCV", "MediaPipe"]
-    },
-    {
-      "year": "2023",
-      "title": "Distributed Systems",
-      "description": "Built complex distributed systems with fault tolerance and consensus protocols.",
-      "category": "systems",
-      "skills": ["Python", "C++", "gRPC", "Two-Phase Commit"]
-    },
-    {
-      "year": "2019",
-      "title": "Quality Assurance & Testing",
-      "description": "Mastered test automation and performance optimization techniques.",
-      "category": "testing",
-      "skills": ["Jasmine", "Test Automation", "Jenkins", "LoadRunner"]
-    },
-    {
-      "year": "2024",
-      "title": "Modern AI & Cloud Native",
-      "description": "Advanced AI implementations and cloud-native architecture.",
-      "category": "ai_ml",
-      "skills": ["RAG with LangChain", "Docker & Kubernetes", "ELK Stack"]
     }
   ],
   "stats": [

@@ -107,6 +107,77 @@
       "categories": ["Mobile", "ML/AI"]
     },
     {
+      "title": "MediClerk – Healthcare Assistant & Wellness Tracker",
+      "description": "Comprehensive mobile healthcare application combining AI-powered medical assistance with personal wellness tracking and secure data management",
+      "images": [
+        "/images/projects/WellnessWave/1.png",
+        "/images/projects/WellnessWave/2.png",
+        "/images/projects/WellnessWave/3.png",
+        "/images/projects/WellnessWave/4.png",
+        "/images/projects/WellnessWave/5.png",
+        "/images/projects/WellnessWave/6.png"
+      ],
+      "technologies": [
+        "React Native",
+        "React Native Paper",
+        "Expo",
+        "Firebase",
+        "Grok AI",
+        "TypeScript",
+        "Clerk",
+        "Lottie",
+        "AsyncStorage"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/medi_clerk",
+      "liveUrl": "",
+      "keyFeatures": [
+        "AI-powered medical guidance using Grok AI",
+        "Secure authentication and data management with Clerk",
+        "Interactive wellness tracking with charts and calendars",
+        "Modern UI with custom animations via Lottie",
+        "Speech recognition and image processing capabilities",
+        "Real-time data sync and offline functionality",
+        "Privacy-focused design for medical data"
+      ],
+      "categories": ["Mobile", "ML/AI"]
+    },
+    {
+      "title": "MavBudgetz - Personal Finance Tracker",
+      "description": "Modern web-based personal finance platform with comprehensive expense tracking and visual analytics, designed specifically for student budgeting needs",
+      "images": [
+        "/images/projects/MavBudgetz/1.png",
+        "/images/projects/MavBudgetz/2.png",
+        "/images/projects/MavBudgetz/3.png",
+        "/images/projects/MavBudgetz/4.png",
+        "/images/projects/MavBudgetz/5.png",
+        "/images/projects/MavBudgetz/6.png",
+        "/images/projects/MavBudgetz/7.png",
+        "/images/projects/MavBudgetz/8.png",
+        "/images/projects/MavBudgetz/9.png"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "MySQL",
+        "Prisma",
+        "Clerk",
+        "Next.js"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/MavBudgetz",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Comprehensive expense tracking with custom categories",
+        "Interactive data visualization with charts and graphs",
+        "Secure authentication via Clerk",
+        "Dark/Light theme support with responsive design",
+        "77% test coverage across unit and integration tests",
+        "Optimized performance with high Lighthouse scores",
+        "Structured database schema using Prisma ORM"
+      ],
+      "categories": ["Full Stack"]
+    },
+    {
       "title": "PoseMaster – Real-Time Yoga Pose Detection System",
       "description": "Advanced computer vision system for real-time yoga pose detection and classification using ensemble machine learning models",
       "images": [
@@ -167,41 +238,6 @@
       "categories": ["ML/AI"]
     },
     {
-      "title": "MediClerk – Healthcare Assistant & Wellness Tracker",
-      "description": "Comprehensive mobile healthcare application combining AI-powered medical assistance with personal wellness tracking and secure data management",
-      "images": [
-        "/images/projects/WellnessWave/1.png",
-        "/images/projects/WellnessWave/2.png",
-        "/images/projects/WellnessWave/3.png",
-        "/images/projects/WellnessWave/4.png",
-        "/images/projects/WellnessWave/5.png",
-        "/images/projects/WellnessWave/6.png"
-      ],
-      "technologies": [
-        "React Native",
-        "React Native Paper",
-        "Expo",
-        "Firebase",
-        "Grok AI",
-        "TypeScript",
-        "Clerk",
-        "Lottie",
-        "AsyncStorage"
-      ],
-      "githubUrl": "https://github.com/SuhithCodes/medi_clerk",
-      "liveUrl": "",
-      "keyFeatures": [
-        "AI-powered medical guidance using Grok AI",
-        "Secure authentication and data management with Clerk",
-        "Interactive wellness tracking with charts and calendars",
-        "Modern UI with custom animations via Lottie",
-        "Speech recognition and image processing capabilities",
-        "Real-time data sync and offline functionality",
-        "Privacy-focused design for medical data"
-      ],
-      "categories": ["Mobile", "ML/AI"]
-    },
-    {
       "title": "DistribuSync - Distributed File System & Computation Service",
       "description": "Advanced distributed system implementing real-time file synchronization and remote computation capabilities with multi-threaded architecture",
       "images": [
@@ -260,42 +296,6 @@
       "categories": ["Distributed Systems"]
     },
     {
-      "title": "MavBudgetz - Personal Finance Tracker",
-      "description": "Modern web-based personal finance platform with comprehensive expense tracking and visual analytics, designed specifically for student budgeting needs",
-      "images": [
-        "/images/projects/MavBudgetz/1.png",
-        "/images/projects/MavBudgetz/2.png",
-        "/images/projects/MavBudgetz/3.png",
-        "/images/projects/MavBudgetz/4.png",
-        "/images/projects/MavBudgetz/5.png",
-        "/images/projects/MavBudgetz/6.png",
-        "/images/projects/MavBudgetz/7.png",
-        "/images/projects/MavBudgetz/8.png",
-        "/images/projects/MavBudgetz/9.png"
-      ],
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "MySQL",
-        "Prisma",
-        "Clerk",
-        "Next.js"
-      ],
-      "githubUrl": "https://github.com/SuhithCodes/MavBudgetz",
-      "liveUrl": "",
-      "keyFeatures": [
-        "Comprehensive expense tracking with custom categories",
-        "Interactive data visualization with charts and graphs",
-        "Secure authentication via Clerk",
-        "Dark/Light theme support with responsive design",
-        "77% test coverage across unit and integration tests",
-        "Optimized performance with high Lighthouse scores",
-        "Structured database schema using Prisma ORM"
-      ],
-      "categories": ["Full Stack"]
-    },
-    {
       "title": "SWIM Protocol Implementation - Distributed Membership Protocol",
       "description": "Advanced implementation of the SWIM (Scalable Weakly-consistent Infection-style Process Group Membership) Protocol using gRPC and a hybrid Python/C++ architecture for robust distributed systems",
       "images": [
@@ -308,7 +308,7 @@
         "C++",
         "gRPC",
         "Docker",
-        "CMake",
+        "C++",
         "Distributed Systems",
         "Protocol Buffers",
         "Thread Safety"
@@ -323,6 +323,39 @@
         "Comprehensive test suite for various failure scenarios",
         "Docker-based deployment with multi-container support",
         "Efficient state recovery and conflict resolution"
+      ],
+      "categories": ["Distributed Systems"]
+    },
+    {
+      "title": "RAFT Protocol Implementation - Distributed Consensus Protocol",
+      "description": "A comprehensive implementation of the RAFT consensus protocol in Python, enabling distributed systems to maintain consistency across multiple nodes even in the presence of network failures.",
+      "images": [
+        "/images/projects/RAFT/1.png",
+        "/images/projects/RAFT/2.png",
+        "/images/projects/RAFT/3.png"
+      ],
+      "technologies": [
+        "Python",
+        "gRPC",
+        "Docker",
+        "Node.js",
+        "Distributed Systems",
+        "Consensus Protocol",
+        "State Machine Replication",
+        "Leader Election",
+        "Log Replication",
+        "Fault Tolerance"
+      ],
+      "githubUrl": "https://github.com/SuhithCodes/RAFT-Protocol",
+      "liveUrl": "",
+      "keyFeatures": [
+        "Robust leader election with randomized timeouts (20-30s)",
+        "Heartbeat-based failure detection system (6s intervals)",
+        "Dynamic cluster membership with node join capabilities",
+        "Comprehensive log replication with consistency guarantees",
+        "Client-side operation retry and leader discovery",
+        "Detailed logging and state management system",
+        "Extensive test suite for various failure scenarios"
       ],
       "categories": ["Distributed Systems"]
     }

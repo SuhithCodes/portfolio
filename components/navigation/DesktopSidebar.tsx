@@ -53,13 +53,13 @@ export function DesktopSidebar({
       <div className="p-4 border-t border-sidebar-border flex justify-between items-center">
         <div className="flex gap-4">
           <Link
-            href="https://github.com"
+            href="https://github.com/SuhithCodes"
             className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
           >
             <Github size={20} />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/gsuhith"
             className="text-muted-foreground hover:text-sidebar-foreground transition-colors"
           >
             <Linkedin size={20} />

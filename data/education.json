@@ -73,94 +73,125 @@
   "certifications": [
     {
       "id": 1,
-      "name": "PHP & Laravel Certification",
-      "issuer": "PHP Developers Association",
-      "date": "December 2022",
-      "duration": "120 hours",
-      "category": "web",
-      "description": "Comprehensive certification covering advanced PHP concepts, Laravel framework, and modern web application development practices.",
-      "skills": ["PHP", "Laravel", "MVC", "RESTful APIs"],
-      "topics": [
-        "Eloquent ORM",
-        "Blade Templating",
-        "Middleware",
-        "Authentication",
-        "Testing"
+      "name": "Agile Software Development",
+      "issuer": "University of Minnesota",
+      "date": "November 15, 2022",
+      "duration": "11 hours",
+      "category": "software development",
+      "description": "Comprehensive course covering Agile methodologies, Scrum practices, and modern software development approaches, authorized by University of Minnesota and offered through Coursera.",
+      "skills": [
+        "Planning",
+        "Project Management",
+        "Scrum",
+        "Design and Product",
+        "Software Development Kit (SDK)"
       ],
-      "image": "/placeholder.svg?height=300&width=500",
-      "url": "https://example.com/certificate"
+      "topics": [
+        "Agile Methodologies",
+        "Scrum Framework",
+        "Sprint Planning",
+        "Project Management",
+        "Team Collaboration",
+        "Software Development Lifecycle"
+      ],
+      "image": "/images/certificates/agile-software-development.png",
+      "url": "https://www.coursera.org/account/accomplishments/verify/PLXFXNNFDRYA"
     },
     {
       "id": 2,
-      "name": "Full Stack Web Development",
-      "issuer": "Web Development Institute",
-      "date": "August 2022",
-      "duration": "200 hours",
-      "category": "web",
-      "description": "Intensive certification program covering both frontend and backend technologies for building modern, responsive web applications.",
-      "skills": ["JavaScript", "HTML/CSS", "Node.js", "React"],
-      "topics": [
-        "Responsive Design",
-        "State Management",
-        "API Integration",
-        "Database Design"
+      "name": "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "issuer": "IBM",
+      "date": "November 18, 2022",
+      "duration": "14 hours",
+      "category": "system administration",
+      "description": "Comprehensive hands-on course covering Linux architecture, shell scripting, and system administration, authorized by IBM and offered through Coursera.",
+      "skills": [
+        "Extract Transform and Load (ETL)",
+        "Shell Script",
+        "Bash (Unix Shell)"
       ],
-      "image": "/placeholder.svg?height=300&width=500",
-      "url": "https://example.com/certificate"
+      "topics": [
+        "Linux Architecture and Distributions",
+        "Shell Scripting with Environment Variables",
+        "Pipes and Filters",
+        "Cron Jobs and Scheduling",
+        "File System Navigation",
+        "Compression and Networking Commands"
+      ],
+      "image": "/images/certificates/ibm-linux-commands.png",
+      "url": "https://www.coursera.org/account/accomplishments/verify/VEQPYTGHHEU9"
     },
     {
       "id": 3,
-      "name": "Database Administration",
-      "issuer": "Database Technologies Association",
-      "date": "March 2022",
-      "duration": "80 hours",
-      "category": "database",
-      "description": "Specialized certification in database design, optimization, and administration with focus on relational database systems.",
-      "skills": ["MySQL", "Database Design", "SQL", "Performance Tuning"],
+      "name": "Six Sigma Principles",
+      "issuer": "Kennesaw State University",
+      "date": "June 2023",
+      "duration": "10 hours",
+      "category": "Leadership and management",
+      "description": "Specialized certification in Six Sigma Principles with focus on Lean Six Sigma and DMAIC methodology.",
+      "skills": ["Lean Six Sigma", "Busineess operations", "Six Sigma"],
       "topics": [
-        "Normalization",
-        "Indexing",
-        "Query Optimization",
-        "Backup & Recovery"
+        "Leadership and management",
+        "Bussiness psychology",
+        "Strategy",
+        "Process improvement",
+        "Leadership",
+        "Lean Six Sigma"
       ],
-      "image": "/placeholder.svg?height=300&width=500",
-      "url": "https://example.com/certificate"
+      "image": "/images/certificates/six-sigma-principles.png",
+      "url": "https://www.coursera.org/account/accomplishments/verify/8274K8TQ68Y6e"
     },
     {
       "id": 4,
-      "name": "Advanced JavaScript",
-      "issuer": "JavaScript Foundation",
-      "date": "November 2021",
-      "duration": "60 hours",
+      "name": "Programming for Everybody (Getting Started with Python)",
+      "issuer": "University of Michigan",
+      "date": "July 1, 2022",
+      "duration": "18 hours",
       "category": "programming",
-      "description": "In-depth certification covering advanced JavaScript concepts, modern ES6+ features, and best practices for web development.",
-      "skills": ["JavaScript", "ES6+", "Async Programming", "Design Patterns"],
-      "topics": [
-        "Promises",
-        "Async/Await",
-        "Functional Programming",
-        "Performance Optimization"
+      "description": "Foundational Python programming course covering core programming concepts, basic syntax, and essential programming tools, authorized by University of Michigan and offered through Coursera.",
+      "skills": [
+        "Algorithms",
+        "Python Syntax And Semantics",
+        "Programming Principles",
+        "Problem Solving"
       ],
-      "image": "/placeholder.svg?height=300&width=500",
-      "url": "https://example.com/certificate"
+      "topics": [
+        "Python Installation and First Program",
+        "Python Programming Basics",
+        "Variables and Information Storage",
+        "Core Programming Tools",
+        "Functions and Loops",
+        "Program Flow Control"
+      ],
+      "image": "/images/certificates/python-programming.png",
+      "url": "https://www.coursera.org/account/accomplishments/verify/YUAGWXRD6YM4"
     },
     {
       "id": 5,
-      "name": "DevOps Essentials",
-      "issuer": "Cloud Technologies Institute",
-      "date": "July 2021",
-      "duration": "100 hours",
+      "name": "Complete DevOps with Docker, Kubernetes, Terraform & Azure DevOps",
+      "issuer": "Udemy",
+      "date": "January 2024",
+      "duration": "32 hours",
       "category": "devops",
-      "description": "Comprehensive certification covering essential DevOps practices, tools, and methodologies for modern software development.",
-      "skills": ["Docker", "CI/CD", "Git", "AWS"],
-      "topics": [
-        "Containerization",
-        "Pipeline Automation",
-        "Infrastructure as Code",
-        "Monitoring"
+      "description": "Comprehensive DevOps certification covering containerization, orchestration, infrastructure as code, and CI/CD pipelines using modern industry-standard tools.",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Azure DevOps",
+        "CI/CD",
+        "Cloud Computing"
       ],
-      "image": "/placeholder.svg?height=300&width=500",
-      "url": "https://example.com/certificate"
+      "topics": [
+        "Docker Containerization",
+        "Kubernetes Cluster Management",
+        "Infrastructure as Code with Terraform",
+        "CI/CD Pipeline Implementation",
+        "Azure Cloud Services",
+        "DevOps Best Practices",
+        "Microservices Architecture"
+      ],
+      "image": "/images/certificates/devops-udemy.png",
+      "url": "https://www.udemy.com/certificate/UC-Z0DX0NC5/"
     }
   ],
   "courseCategories": [

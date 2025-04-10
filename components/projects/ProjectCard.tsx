@@ -28,8 +28,27 @@ interface ProjectCardProps {
 
 function BlankProjectImage() {
   return (
-    <div className="w-full h-full bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-      <div className="text-primary/30 text-xs font-medium">Project Image</div>
+    <div className="w-full h-full bg-gradient-to-br from-primary/5 to-primary/10 flex flex-col items-center justify-center gap-2">
+      <div className="text-primary/50">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+          <circle cx="9" cy="9" r="2" />
+          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+        </svg>
+      </div>
+      <div className="text-primary/40 text-xs font-medium">
+        No Preview Available
+      </div>
     </div>
   );
 }
@@ -47,6 +66,20 @@ function ImageCarousel({
   onPrev: () => void;
   showControls?: boolean;
 }) {
+  const [failedImages, setFailedImages] = useState<{ [key: string]: boolean }>(
+    {}
+  );
+
+  const handleImageError = (imageSrc: string) => {
+    setFailedImages((prev) => ({ ...prev, [imageSrc]: true }));
+  };
+
+  const allImagesFailed = images.every((img) => failedImages[img]);
+
+  if (allImagesFailed) {
+    return <BlankProjectImage />;
+  }
+
   return (
     <div className="relative group overflow-hidden">
       <motion.div
@@ -64,16 +97,21 @@ function ImageCarousel({
               animate={{ opacity: index === currentIndex ? 1 : 0 }}
               transition={{ duration: 0.3 }}
             >
-              <img
-                src={image}
-                alt={`Project screenshot ${index + 1}`}
-                className="w-full h-full object-contain"
-              />
+              {failedImages[image] ? (
+                <BlankProjectImage />
+              ) : (
+                <img
+                  src={image}
+                  alt={`Project screenshot ${index + 1}`}
+                  className="w-full h-full object-contain"
+                  onError={() => handleImageError(image)}
+                />
+              )}
             </motion.div>
           ))}
         </div>
       </motion.div>
-      {showControls && (
+      {showControls && !allImagesFailed && (
         <>
           <button
             onClick={(e) => {
@@ -148,13 +186,17 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       >
         {/* Project Image */}
         <div className="aspect-[16/9] relative bg-black/5">
-          <ImageCarousel
-            images={project.images}
-            currentIndex={currentImageIndex}
-            onNext={handleNextImage}
-            onPrev={handlePrevImage}
-            showControls={isHovered}
-          />
+          {project.images && project.images.length > 0 ? (
+            <ImageCarousel
+              images={project.images}
+              currentIndex={currentImageIndex}
+              onNext={handleNextImage}
+              onPrev={handlePrevImage}
+              showControls={isHovered}
+            />
+          ) : (
+            <BlankProjectImage />
+          )}
           <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
             <span className="text-white text-sm">View Details</span>
           </div>
@@ -217,13 +259,17 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
               {/* Project Image */}
               <div className="relative rounded-lg overflow-hidden mb-3">
-                <ImageCarousel
-                  images={project.images}
-                  currentIndex={currentImageIndex}
-                  onNext={handleNextImage}
-                  onPrev={handlePrevImage}
-                  showControls={true}
-                />
+                {project.images && project.images.length > 0 ? (
+                  <ImageCarousel
+                    images={project.images}
+                    currentIndex={currentImageIndex}
+                    onNext={handleNextImage}
+                    onPrev={handlePrevImage}
+                    showControls={true}
+                  />
+                ) : (
+                  <BlankProjectImage />
+                )}
               </div>
 
               <div className="space-y-3">

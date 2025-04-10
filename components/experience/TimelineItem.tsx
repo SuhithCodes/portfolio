@@ -171,150 +171,155 @@ export function TimelineItem({
        * Features expandable content and hover effects
        * Layout adapts based on even/odd positioning
        */}
-      <Card
-        className={cn(
-          "ml-20 md:ml-0 md:mr-0 md:w-5/12 mt-12 cursor-pointer hover:shadow-md transition-shadow",
-          isEven ? "md:mr-auto" : "md:ml-auto"
-        )}
-        onClick={onToggle}
-      >
-        {/* Card Header - Basic Job Information */}
-        <CardHeader className="p-3">
-          <div className={cn("flex items-start justify-between")}>
-            {/* Job Title and Company Info - Always Left Aligned */}
-            <div className="text-left">
-              <CardTitle className="text-base text-primary">
-                {job.title}
-              </CardTitle>
-              <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
-                <Building className="h-3 w-3" />
-                <span>{job.company}</span>
-              </CardDescription>
-              <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
-                <MapPin className="h-3 w-3" />
-                <span>{job.location}</span>
-              </CardDescription>
-            </div>
-            {/* Employment Type Badge - Always Right Aligned */}
-            <Badge variant={getBadgeVariant(job.type)} className="ml-2 text-xs">
-              {getTypeLabel(job.type)}
-            </Badge>
-          </div>
-        </CardHeader>
-
-        {/* Card Content - Job Description and Technologies */}
-        <CardContent className={cn("p-3", isEven ? "md:text-left" : "")}>
-          <p className="text-xs text-muted-foreground mb-3">
-            {job.description}
-          </p>
-
-          {/* Technology Stack Tags */}
-          <div
-            className={cn(
-              "flex flex-wrap gap-1.5 mb-3",
-              isEven ? "md:justify-start" : ""
-            )}
-          >
-            {job.technologies.map((tech, techIndex) => (
+      <div className="pt-1">
+        <Card
+          className={cn(
+            "ml-20 md:ml-0 md:mr-0 md:w-5/12 mt-12 cursor-pointer hover:shadow-md transition-shadow",
+            isEven ? "md:mr-auto" : "md:ml-auto"
+          )}
+          onClick={onToggle}
+        >
+          {/* Card Header - Basic Job Information */}
+          <CardHeader className="p-3">
+            <div className={cn("flex items-start justify-between")}>
+              {/* Job Title and Company Info - Always Left Aligned */}
+              <div className="text-left">
+                <CardTitle className="text-base text-primary">
+                  {job.title}
+                </CardTitle>
+                <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
+                  <Building className="h-3 w-3" />
+                  <span>{job.company}</span>
+                </CardDescription>
+                <CardDescription className="flex items-center gap-1.5 mt-0.5 text-xs">
+                  <MapPin className="h-3 w-3" />
+                  <span>{job.location}</span>
+                </CardDescription>
+              </div>
+              {/* Employment Type Badge - Always Right Aligned */}
               <Badge
-                key={techIndex}
-                variant="outline"
-                className="bg-muted/30 text-[10px] px-1.5 py-0.5"
+                variant={getBadgeVariant(job.type)}
+                className="ml-2 text-xs"
               >
-                {tech}
+                {getTypeLabel(job.type)}
               </Badge>
-            ))}
-          </div>
+            </div>
+          </CardHeader>
 
-          {/* Expand/Collapse Toggle Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="h-7 text-xs flex items-center gap-1 text-muted-foreground hover:text-foreground"
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent card click event from triggering
-              onToggle();
-            }}
-          >
-            {isExpanded ? (
-              <>
-                <ChevronUp className="h-3 w-3" />
-                <span>Show Less</span>
-              </>
-            ) : (
-              <>
-                <ChevronDown className="h-3 w-3" />
-                <span>Show More</span>
-              </>
-            )}
-          </Button>
-        </CardContent>
+          {/* Card Content - Job Description and Technologies */}
+          <CardContent className={cn("p-3", isEven ? "md:text-left" : "")}>
+            <p className="text-xs text-muted-foreground mb-3">
+              {job.description}
+            </p>
 
-        {/* Expandable Content Section
-         * Only rendered when isExpanded is true
-         * Contains achievements and optional project link
-         */}
-        {isExpanded && (
-          <CardContent
-            className={cn("pt-0 px-3 pb-3", isEven ? "md:text-left" : "")}
-          >
-            <div className="border-t my-3"></div>
+            {/* Technology Stack Tags */}
+            <div
+              className={cn(
+                "flex flex-wrap gap-1.5 mb-3",
+                isEven ? "md:justify-start" : ""
+              )}
+            >
+              {job.technologies.map((tech, techIndex) => (
+                <Badge
+                  key={techIndex}
+                  variant="outline"
+                  className="bg-muted/30 text-[10px] px-1.5 py-0.5"
+                >
+                  {tech}
+                </Badge>
+              ))}
+            </div>
 
-            {/* Key Achievements Section */}
-            <div className={cn("mb-3", isEven ? "md:text-left" : "")}>
-              <h4
-                className={cn(
-                  "font-semibold mb-2 flex items-center gap-1.5 text-xs",
-                  isEven ? "md:justify-start" : ""
-                )}
-              >
-                <Award className="h-3 w-3 text-yellow-500" />
-                Key Achievements
-              </h4>
-              <ul className="space-y-1.5">
-                {job.achievements.map((achievement, achievementIndex) => (
-                  <li
-                    key={achievementIndex}
-                    className={cn(
-                      "flex items-start gap-1.5",
-                      isEven ? "md:justify-start" : ""
-                    )}
-                  >
-                    <CheckCircle className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span
+            {/* Expand/Collapse Toggle Button */}
+            <Button
+              variant="ghost"
+              size="sm"
+              className="h-7 text-xs flex items-center gap-1 text-muted-foreground hover:text-foreground"
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent card click event from triggering
+                onToggle();
+              }}
+            >
+              {isExpanded ? (
+                <>
+                  <ChevronUp className="h-3 w-3" />
+                  <span>Show Less</span>
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="h-3 w-3" />
+                  <span>Show More</span>
+                </>
+              )}
+            </Button>
+          </CardContent>
+
+          {/* Expandable Content Section
+           * Only rendered when isExpanded is true
+           * Contains achievements and optional project link
+           */}
+          {isExpanded && (
+            <CardContent
+              className={cn("pt-0 px-3 pb-3", isEven ? "md:text-left" : "")}
+            >
+              <div className="border-t my-3"></div>
+
+              {/* Key Achievements Section */}
+              <div className={cn("mb-3", isEven ? "md:text-left" : "")}>
+                <h4
+                  className={cn(
+                    "font-semibold mb-2 flex items-center gap-1.5 text-xs",
+                    isEven ? "md:justify-start" : ""
+                  )}
+                >
+                  <Award className="h-3 w-3 text-yellow-500" />
+                  Key Achievements
+                </h4>
+                <ul className="space-y-1.5">
+                  {job.achievements.map((achievement, achievementIndex) => (
+                    <li
+                      key={achievementIndex}
                       className={cn(
-                        "text-xs text-muted-foreground",
-                        isEven ? "text-left" : ""
+                        "flex items-start gap-1.5",
+                        isEven ? "md:justify-start" : ""
                       )}
                     >
-                      {achievement}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                      <CheckCircle className="h-3 w-3 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span
+                        className={cn(
+                          "text-xs text-muted-foreground",
+                          isEven ? "text-left" : ""
+                        )}
+                      >
+                        {achievement}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Optional Project Link Button */}
-            {job.projectLink && (
-              <Button
-                variant="outline"
-                size="sm"
-                className={cn(
-                  "h-7 text-xs flex items-center gap-1.5",
-                  isEven ? "md:ml-0" : ""
-                )}
-                onClick={(e) => {
-                  e.stopPropagation(); // Prevent card click event from triggering
-                  window.open(job.projectLink, "_blank");
-                }}
-              >
-                <ExternalLink className="h-3 w-3" />
-                View Project
-              </Button>
-            )}
-          </CardContent>
-        )}
-      </Card>
+              {/* Optional Project Link Button */}
+              {job.projectLink && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className={cn(
+                    "h-7 text-xs flex items-center gap-1.5",
+                    isEven ? "md:ml-0" : ""
+                  )}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent card click event from triggering
+                    window.open(job.projectLink, "_blank");
+                  }}
+                >
+                  <ExternalLink className="h-3 w-3" />
+                  View Project
+                </Button>
+              )}
+            </CardContent>
+          )}
+        </Card>
+      </div>
     </motion.div>
   );
 }

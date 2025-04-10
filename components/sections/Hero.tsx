@@ -13,7 +13,7 @@ export function Hero({ scrollToSection }: HeroProps) {
   return (
     <div className="w-full max-w-4xl mx-auto text-center relative z-10 py-4">
       {/* Terminal-like header */}
-      <div className="mb-4 mx-auto max-w-md">
+      <div className="mb-4 mx-auto max-w-md pt-16">
         <div className="bg-card border rounded-lg shadow-lg overflow-hidden">
           <div className="flex items-center gap-1.5 px-3 py-1.5 bg-muted/50 border-b">
             <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
